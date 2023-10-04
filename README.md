@@ -37,7 +37,19 @@ print("Los números pares: " + str(Lista_pares))
 * EXPLICACION
 * Mirar archivo Punto_3.py
 ```pseudocode
+n = int(input("Ingrese un número mayor o igual a 2: "))
+m=n
+lista = []
+numeros_pares =  []
 
+while m<=n:
+  if m>1:
+    m -= 1
+    if m%2==0:
+      lista.append(m)
+  else:
+    break
+print("Los números pares desde n hasta 2 son: " + str(lista))
 ```
 **4.** En 2022 el país A tendrá una población de 25 millones de habitantes y el país B de 18.9 millones. Las tasas de crecimiento anual de la población serán de 2% y 3% respectivamente. Desarrollar un algoritmo para informar en que año la población del país B superará a la de A.
 * EXPLICACION
@@ -73,7 +85,21 @@ print("El factorial del número es: " + str(factorial))
 * EXPLICACION
 * Mirar archivo Punto_6.py
 ```pseudocode
-
+import random 
+n = int(input("Ingrese un número:"))
+min = 1
+max = 100
+bandera : bool = True
+while bandera == True:
+  n_random=random.randint(min, max)
+  pregunta = input("El número es mayor, menor, o igual que: " + str(n_random))
+  if pregunta == "mayor":
+    min = n_random + 1
+  elif pregunta =="menor":
+    max = n_random - 1
+  else:
+    break
+print("El número es: " + str(n_random))  
 ```
 **7.** Implementar un programa que ingrese un número de 2 a 50 y muestre sus divisores.
 * EXPLICACION
