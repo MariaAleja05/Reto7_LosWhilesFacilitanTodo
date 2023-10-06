@@ -3,6 +3,18 @@
 ### Link notebook: https://colab.research.google.com/drive/1fZk8OSnmX8CliyDd8knGgl5fd1s4yO7P?usp=sharing
 **1.** Imprimir un listado con los números del 1 al 100 cada uno con su respectivo cuadrado.
 * EXPLICACION
+* Diagrama de flujo:
+```mermaid
+flowchart TB;
+    A([START])--> B[/"n=0 ; Lista=[]"/]
+    B -->C{n<=100}
+    C -- SI --> D["cuadrado = n**2"]
+    D --> E["Lista.append(cuadrado)"]
+    E --> F["n+=1"]
+    F ---> C
+    C --- NO ---> G[/"Lista"/]
+    G --> H([END])
+```
 * Mirar archivo Punto_1.py
 ```pseudocode
 n= 1
@@ -17,6 +29,21 @@ print(Lista)
 ```
 **2.** Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.
 * EXPLICACION
+* Diagrama de flujo:
+```mermaid
+flowchart TB;
+    A([START])--> B[/"n=1 ; Lista_impares=[] ; Lista_pares=[]"/]
+    B -->C{n<=1000}
+    C -- SI --> D{"n%2==0"}
+    D -- SI --> E["Lista_pares.append(n)"]
+    D -- NO --> F["Lista_impares.append(n)"]
+    E --> G["n+=1"]
+    F --> G
+    G ---->C
+    C -- NO ---> H[/"Lista_impares"/]
+    H --> K[/"Lista_pares"/]
+    K --> I([END])
+```
 * Mirar archivo Punto_2.py
 ```pseudocode
 n = 1
@@ -35,6 +62,21 @@ print("Los números pares: " + str(Lista_pares))
 ```
 **3.** Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado
 * EXPLICACION
+* Diagrama de flujo:
+```mermaid
+flowchart TB;
+    A([START])--> B[/"n=0 ; m=n ; lista =[] ; numeros_pares=[]"/]
+    B -->C{m<=n}
+    C -- SI --> D{"m>1"}
+    D -- SI --> E["m-=1"]
+    E --> F{"m%2==0"}
+    F -- SI --> G["lista.append(m)"]
+    G -->
+    D -- NO --> H["break"]
+    H -----> C
+    C -- NO ----> I[/"lista"/]
+    I --> J([END])
+```
 * Mirar archivo Punto_3.py
 ```pseudocode
 n = int(input("Ingrese un número mayor o igual a 2: "))
