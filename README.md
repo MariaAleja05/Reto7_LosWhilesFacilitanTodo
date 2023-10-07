@@ -1,7 +1,6 @@
 # Reto número 7 repo
 ### Fecha:  02-10-2023
-### Link notebook: https://colab.research.google.com/drive/1fZk8OSnmX8CliyDd8knGgl5fd1s4yO7P?usp=sharing
-* Mirar archivo Reto7.ipynb
+### Link notebook: https://colab.research.google.com/drive/1fZk8OSnmX8CliyDd8knGgl5fd1s4yO7P?usp=sharing , mirar archivo Reto_7.ipynb
 **1.** Imprimir un listado con los números del 1 al 100 cada uno con su respectivo cuadrado.
 * Para este problema primero definí mis variables n=1 ya que el listado debe comenzar desde 1 y, una lista vacía donde se van a ir incluyendo los cuadrados de los número.
 
