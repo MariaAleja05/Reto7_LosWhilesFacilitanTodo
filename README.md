@@ -194,5 +194,23 @@ print(Lista_divisores)
 * EXPLICACION
 * Mirar archivo Punto_8.py
 ```pseudocode
-
+def EncontrarNumerosPrimos(numero: int, m: int, c: int) -> int:
+  while numero < 100:
+    numero += 1
+    m = 1
+    c = 0
+    while m <= (numero**0.5):
+      if numero%m==0:
+        c += 1
+      m += 1
+    if c == 1:
+      lista.append(numero)
+  return lista
+if __name__ == "__main__":
+  numero: int = 1
+  m: int = 1
+  c: int = 0
+  lista=[]
+  num_primo = EncontrarNumerosPrimos(numero, m, c)
+  print(num_primo)
 ```
