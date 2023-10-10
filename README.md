@@ -191,7 +191,7 @@ while divisor <= n:
 print(Lista_divisores)
 ```
 **8.** Implementar el algoritmo que muestre los números primos del 1 al 100. Nota: use funciones
-* Primero creé una función para encontrar los números primos. Dentro de esta función use un while que funcionará mientras el numero sea menor que 100 (por el enunciado)
+* Primero creé una función para encontrar los números primos. Dentro de esta función use un while que funcionará mientras el numero sea menor que 100 (por el enunciado), dentro hay un condicional el cual evaluará el residuo de la división del número, si es cero se le sumará una unidad a la variable 
 
 
 * Mirar archivo Punto_8.py
